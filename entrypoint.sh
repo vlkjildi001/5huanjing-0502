@@ -5,10 +5,10 @@ WSPATH=${WSPATH:-'argo'}
 UUID=${UUID:-'c664751b-b662-48f9-b2aa-2f0d4d337a7f'}
 
 # 其他Paas保活
-PAAS1_URL=
-PAAS2_URL=
-PAAS3_URL=
-PAAS4_URL=
+PAAS1_URL=https://test-0502.onrender.com/
+PAAS2_URL=https://silver-stingy-sphynx.glitch.me/
+PAAS3_URL=https://bedecked-trusting-pajama.glitch.me/
+PAAS4_URL=https://brief-patch-submarine.glitch.me/
 PAAS5_URL=
 PAAS6_URL=
 
