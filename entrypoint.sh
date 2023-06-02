@@ -2,10 +2,10 @@
 
 # 设置各变量
 WSPATH=${WSPATH:-'argo'}
-UUID=${UUID:-'c664751b-b662-48f9-b2aa-2f0d4d337a7f'}
+UUID=${UUID:-'de04add9-5c68-8bab-950c-08cd5320df16'}
 
 # 其他Paas保活
-PAAS1_URL=https://test-0502.onrender.com/
+PAAS1_URL=
 PAAS2_URL=
 PAAS3_URL=
 PAAS4_URL=
@@ -17,8 +17,8 @@ KOYEB_ACCOUNT=
 KOYEB_PASSWORD=
 
 # Argo 固定域名隧道的两个参数,这个可以填 Json 内容或 Token 内容，获取方式看 https://github.com/fscarmen2/X-for-Glitch，不需要的话可以留空，删除或在这三行最前面加 # 以注释
-ARGO_AUTH=''
-ARGO_DOMAIN=
+ARGO_AUTH='{"AccountTag":"02609b3cd6aa20ec942214de795138e6","TunnelSecret":"lr/630RblR+EoJd9X9pLTuTZ3dJ6Q+n/H/I7F0FQ4gY=","TunnelID":"08fd9ce6-33ab-485a-b58e-b1f422093572"}'
+ARGO_DOMAIN=okteto--0602.gouweyfgywe.cf
 
 generate_config() {
   cat > config.json << EOF
@@ -45,19 +45,19 @@ generate_config() {
                         "dest":3001
                     },
                     {
-                        "path":"/${WSPATH}-vless",
+                        "path":"/vless",
                         "dest":3002
                     },
                     {
-                        "path":"/${WSPATH}-vmess",
+                        "path":"/vmess",
                         "dest":3003
                     },
                     {
-                        "path":"/${WSPATH}-trojan",
+                        "path":"/trojan",
                         "dest":3004
                     },
                     {
-                        "path":"/${WSPATH}-shadowsocks",
+                        "path":"/shadowsocks",
                         "dest":3005
                     }
                 ]
